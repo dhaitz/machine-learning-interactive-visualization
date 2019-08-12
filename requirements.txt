@@ -3,3 +3,4 @@ pandas
 seaborn
 scikit-learn
 ipywidgets
+voila

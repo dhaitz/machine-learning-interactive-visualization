@@ -83,6 +83,7 @@ def swarmplot_with_custom_colors(ax, x_values, face_colors=None, edge_colors=Non
     sns.swarmplot(x=x_values,
                   ax=ax,
                   **kwargs)
+    ax.set_xlim(-0.01, 1.01)
 
     # modify path collection
     pc = [pc for pc in ax.get_children() if type(pc) == collections.PathCollection][0]
@@ -127,5 +128,6 @@ def plot_predicted_values_as_swarmplot_with_green_red_outline(ax, true_values, p
     ax.axvspan(cutoff, 1, color=DEFAULT_MARBLE_COLOR, alpha=0.1, zorder=-1)
 
     ax.axis('off')
-    ax.set_xlim(0, 1)
     ax.set_title("Classifier result: true/false")
+
+

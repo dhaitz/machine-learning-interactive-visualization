@@ -28,7 +28,7 @@ def predict_values(true_values, quality):
     """Basically a classifier that draws from a gaussian.
 
     quality = 0: mean around 0.5, broad  -> basically random
-    quality = 1: mean around 0.25 (for true_value == 1) or 0.75 (for true_value == 0), narrow -> true values should be separatable
+    quality = 1: mean around 0.25 (for true_value == 1) or 0.75 (for true_value == 0), narrow -> true values should be separable
     """
     estimated_values = []
 
@@ -52,10 +52,10 @@ def make_roc_curve_plot(ax, true_values, predicted_values, cutoff):
 
     for fp, tp, threshold in zip(fpr, tpr, thresholds):
         if threshold < cutoff:
-            ax.plot(fp, tp, marker='*', markersize=10)
+            ax.plot(fp, tp, marker='o', markersize=10, color='grey', alpha=0.75)
             break
 
-    ax.plot([0, 1], [0, 1], c='grey')
+    ax.plot([0, 1], [0, 1], c='grey', alpha=0.5)
     ax.legend()
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)

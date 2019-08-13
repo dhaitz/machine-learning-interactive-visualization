@@ -2,5 +2,5 @@ matplotlib
 pandas
 seaborn
 scikit-learn
-ipywidgets
+ipywidgets>=7.5,<8
 voila

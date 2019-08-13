@@ -6,6 +6,8 @@ Some code copied from [this voila example](https://github.com/pbugnion/voila-gal
 
 Deployment: https://voila.readthedocs.io/en/latest/deploy.html#deployment-on-heroku
 
+![ml](img/ml_visualization.gif)
+
 
 ## ToDo
 

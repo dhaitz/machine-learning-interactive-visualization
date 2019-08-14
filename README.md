@@ -3,6 +3,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dhaitz/machine-learning-interactive-visualization/master?urlpath=voila%2Frender%2Fmachine-learning-interactive-visualization.ipynb)
 
 An interactive dashboard made with Jupyter and [Voila](https://github.com/QuantStack/voila).
+Users can play around with parameter like class imbalance, model strength or cutoff value and observe the effects on metris like ROC/AUC or accuracy/precision/recall.
 
 Some code copied from [this voila example](https://github.com/pbugnion/voila-gallery/blob/master/country-indicators/index.ipynb).
 

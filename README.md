@@ -5,6 +5,8 @@
 An interactive dashboard made with Jupyter and [Voila](https://github.com/QuantStack/voila).
 Users can play around with parameter like class imbalance, model strength or cutoff value and observe the effects on metris like ROC/AUC or accuracy/precision/recall.
 
+Now available live [here](https://machine-learning-visualization.herokuapp.com/) and in the [official Voila Gallery](https://voila-gallery.org/services/gallery/).
+
 Some code copied from [this voila example](https://github.com/pbugnion/voila-gallery/blob/master/country-indicators/index.ipynb).
 
 Deployment: https://voila.readthedocs.io/en/latest/deploy.html#deployment-on-heroku
@@ -16,5 +18,4 @@ Deployment: https://voila.readthedocs.io/en/latest/deploy.html#deployment-on-her
 
 - More comprehensive Readme on machine learning model evaluation, describing metrics in detail
 - Create GIFs and add to Readme
-- Smoother refresh, without flickering
-- Faster plot update
+- Smoother refresh and faster plot update. Could be possible via using matplotlib's notebook or widget backend, but currently not working, see [this GitHub issue](https://github.com/matplotlib/matplotlib/issues/15076).
